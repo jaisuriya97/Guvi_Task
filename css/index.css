@@ -1,0 +1,10 @@
+#register{
+    color: white;
+    background-color: #0dba4b !important;
+}
+#register:hover{
+    background-color: #0b923c !important;
+}
+#login{
+    color: #0dba4b !important;
+}

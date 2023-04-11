@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/profile.css">
+</head>
+
+<body class="bg-light">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
+    <div class="container-xl px-4 mt-0 bg-light">
+        <!-- Account page navigation-->
+
+        <div class="row">
+            <div class="col-xl-6">
+                <!-- Profile picture card-->
+                <div class="alert alert-success alert-dismissible fade show shadow" role="alert">
+                    <strong>Greetings!!</strong> You should check in on some of those fields below.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <h1 class="text-dark">Welcome💐</h1>
+                <div class="bg-light mb-4 mb-xl-0">
+
+                    <div class="row mx-5 mt-3 p-2 bg-light shadow rounded text-secondary">
+                        <!-- <label for="name" class="fs-5">Email:</label> -->
+                        <div class=" card-header rounded   text-dark">User Profile </div>
+                        <div class="col-lg-5 m-1 p-1  rounded  border-black">
+                            <span class="text-dark">Email </span> <span
+                                class="name m-1 text-lg-center text-secondary  input-group-text" id="email"></span>
+                        </div>
+                        <div class="col-lg-5 m-1 p-1  rounded  border-black">
+                            <span class="text-dark">password </span>
+                            <span class="name text-lg-center text-secondary m-1 text-secondary input-group-text"
+                                id="Password"></span>
+                        </div>
+                        <!-- <label for="name" class="fs-5">Email:</label> -->
+                        <div class="col-lg-5 m-1 p-1  rounded  border-black">
+                            <span class="text-dark">First Name</span> <span
+                                class="name m-1  text-secondary text-lg-center input-group-text" id="fname"></span>
+                        </div>
+                        <div class="col-lg-5 m-1 p-1  rounded  border-black">
+                            <span class="text-dark">Last Name</span>
+                            <span class="name text-lg-center m-1 text-secondary input-group-text" id="lname"></span>
+                        </div>
+                        <div class="col-lg-5 m-1 p-1  rounded  border-black">
+                            <span class="text-dark">Phone</span>
+                            <span class="name text-lg-center m-1 text-secondary input-group-text" id="phone"></span>
+                        </div>
+                        <div class="col-lg-5 m-1 p-1  rounded  border-black">
+                            <span class="text-dark">Age</span>
+                            <span class="name text-lg-center m-1 text-secondary input-group-text" id="Age">&nbsp;</span>
+                        </div>
+                        <div class="col-lg-5 m-1 p-1  rounded  border-black">
+                            <span class="text-dark">Date of Birth</span>
+                            <span class="name text-lg-center m-1 text-secondary input-group-text" id="Dob" >&nbsp;</span>
+                        </div>
+                        <div class="col-lg-5 m-1 p-1  rounded  border-black">
+                            <span class="text-dark">Gender</span>
+                            <span class="name text-lg-center m-1 text-secondary input-group-text"
+                                id="Gender">&nbsp;</span>
+                        </div>
+                        <div class="col-lg-10 m-1 p-1  rounded  border-black">
+                            <span class="text-dark">Address</span>
+                            <span class="name text-lg-center m-1 text-secondary input-group-text"
+                                id="address">&nbsp;</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <!-- Account details card-->
+                <div class="card mb-4 mt-0 shadow">
+                    <div class="card-header rounded m-2 bg-light">Details</div>
+                    <div class="card-body">
+                        <form>
+                            <!-- Form Group (username)-->
+
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (first name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputFirstName">First name</label>
+                                    <input class="form-control" id="inputFirstName" type="text"
+                                        placeholder="Enter your first name">
+                                        <div class="invalid-feedback">Please enter a valid name.</div>
+                                </div>
+                                <!-- Form Group (last name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLastName">Last name</label>
+                                    <input class="form-control" id="inputLastName" type="text"
+                                        placeholder="Enter your last name" value="Luna">
+                                        <div class="invalid-feedback">Please enter a valid name.</div>
+                                </div>
+                            </div>
+                            <!-- Form Row        -->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (organization name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="password">password</label>
+                                    <input class="form-control" id="password" type="password"
+                                        placeholder="Enter New Password">
+                                        <div class="invalid-feedback">Please enter a Strong Password.</div>
+                                </div>
+                                <!-- Form Group (location)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="cpassword">Confirm Password</label>
+                                    <input class="form-control" id="cpassword" type="password"
+                                        placeholder="Repeat Password">
+                                        <div class="invalid-feedback">Password not match.</div>
+                                </div>
+                            </div>
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (phone number)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputPhone">Phone number</label>
+                                    <input class="form-control" id="inputPhone" type="tel"
+                                        placeholder="Enter your phone number" >
+                                        <div class="invalid-feedback">Please enter valid mobile number.</div>
+                                </div>
+                                <!-- Form Group (birthday)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputBirthday">Birthday</label>
+                                    <input class="form-control" id="inputBirthday" type="date" name="birthday"
+                                        placeholder="Enter your birthday" >
+                                        <div class="invalid-feedback">Age must be 12 above.</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="small mb-1" for="Address">Address</label>
+                                <input class="form-control" id="Address" type="text" placeholder="Enter your address"
+                                    value="">
+                                    <div class="invalid-feedback">Please enter the address.</div>
+                            </div>
+                            <div class="row gx-3 mb-3">
+                                <label for="flexRadioDisabled" class="small mb-1"> Gender</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                                        id="flexRadioDisabled" value="Male">
+                                    <label class="form-check-label" for="flexRadioDisabled">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDisabled" value="female"
+                                        id="flexRadioCheckedDisabled">
+                                    <label class="form-check-label" for="flexRadioCheckedDisabled">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Save changes button-->
+                            <button class="btn btn-primary shadow" type="button"  id="submit">Save changes</button>
+                            <button class="btn btn-danger shadow" type="button" id="logout" >Logout</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
