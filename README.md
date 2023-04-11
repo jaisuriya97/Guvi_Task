@@ -13,6 +13,7 @@
 3. XAMPP MySQL
 
 4. Redis 6.0
+-> i have set my session time limit for 25 seconds make a changes for better view 
 
 # Screen shorts
 
